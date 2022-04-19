@@ -24,3 +24,25 @@ elif choice == 'straight':
     print('freedom')
 else:
     print('you chose wrong, you die anyways')
+    
+    
+    
+#Zoo treats expanded
+animal = input('State an animal: ')
+if animal == 'Lion' or animal == 'Tiger':
+    print('meat')
+elif animal == 'Zebra' or animal == 'Bison':
+    print('grass')
+elif animal == 'monkey':
+    print('fruit')
+else:
+    print('water')
+    
+    
+animal_two = input('tell me an animal: ')
+if animal == 'cat':
+    print('meow')
+elif animal == 'dog':
+    print('woof')
+else:
+    print('boingo')
