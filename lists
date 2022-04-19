@@ -1,0 +1,7 @@
+aList = ['hedgehog', 'newt', 'vole', 'stoat', 'owl', 'toad', 'robin']
+len(aList)
+import random
+randomNumber = random.randint(0, 6)
+randomElement = aList[randomNumber]
+print(randomElement)
+print(randomNumber)
