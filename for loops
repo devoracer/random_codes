@@ -1,0 +1,12 @@
+
+#the 3rd argument (4 below) specifies how much you'll increase the value of the counter variable each iteration
+for i in range(10, 24, 4):
+    print(i)
+  
+num = int(input('Enter a number: '))
+for i in range(num, 201):
+    if i % 2 == 0:
+        print('Fizz')
+    else:
+        print('buzz')
+  
