@@ -1,0 +1,26 @@
+num1 = 2**8
+if num1 > 128:
+    print('correct')
+
+#Zoo treats
+animal = 'Bird'
+if animal == 'Lion':
+    print('meat')
+elif animal == 'Zebra':
+    print('grass')
+elif animal == 'monkey':
+    print('fruit')
+else:
+    print('water')
+   
+#Dungeon Master code  
+choice = input('choose left, right, or straight.')
+
+if choice == 'left':
+    print('death by badger')
+elif choice == 'right':
+    print('death by shark')
+elif choice == 'straight':
+    print('freedom')
+else:
+    print('you chose wrong, you die anyways')
