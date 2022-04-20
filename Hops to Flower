@@ -1,0 +1,10 @@
+n = input('enter a hop length: ')
+n = int(n)
+m = input('enter a total distance to hop: ')
+m = int(m)
+def hops_to_flower(n, m):
+    return m // n + m % n
+#print('expect 4, got:', hops_to_flower(3, 10))
+
+answer = hops_to_flower(n, m)
+print(answer)
