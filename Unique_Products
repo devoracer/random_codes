@@ -1,0 +1,13 @@
+def unique(products):
+    unique_list = []
+    for product in products:
+        if product not in unique_list:
+            unique_list.append(product)
+    for product in unique_list:
+        print(product)
+    print(len(unique_list))
+
+
+products = (['ball', 5, 2], ['box', 10, 5], ['ball', 10, 3.5], ['ball', 5, 2])
+print('the unique values are: ')
+unique(products)
