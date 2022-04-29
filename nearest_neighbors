@@ -1,0 +1,16 @@
+import numpy as np 
+X = np.random.random((1000, 3))
+print(X.shape)
+#use broadcasting to find pairwise differences
+diff = X.reshape(1000, 1, 3) - X 
+print(diff.shape)
+#aggregate to find pairwise distances
+#square the differences and get the sum along the 2nd dimension - gives a 1000 x 1000 matrix.
+#1000x1000 matrix is the squared distance between the i'th and j'th point. 
+D = (diff ** 2).sum(2)
+print(D.shape)
+i = np.arange(1000) #set diagonal to infinity to skip self-neighbors since each point is 0 distance from itself
+D[i, i] = np.inf 
+#print the indicies of the nearest neighbor
+i = np.argmin(D, 1) #index of the minimum value
+print(i[:10]) #gets the index of the mininum value which is the nearest neighbor of every point in this data set
