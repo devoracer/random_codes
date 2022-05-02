@@ -1,0 +1,8 @@
+def mean(*args):
+    """Returns the mean of all the numbers"""
+    total_sum = 0 # Intial sum
+    n = len(args) # Number of arguments
+    for x in args:
+        total_sum = total_sum + x
+    return total_sum/n
+print((mean(65, 987), mean(20, 25, 30)))
